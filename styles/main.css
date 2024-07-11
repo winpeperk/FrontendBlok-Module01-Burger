@@ -27,6 +27,9 @@ a {
 /* Header */
 
 .header {
+    border-bottom: 1px solid #DEDEDE;
+}
+.header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px;
@@ -44,7 +47,7 @@ a {
 .nav {
     flex-grow: 1;
     display: flex;
-    gap: 46px;
+    gap: 47px;
 }
 .nav-link {
     color: var(--dark);
@@ -139,6 +142,8 @@ a {
     font-size: 79px;
     color: var(--light);
     text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 18px;
 }
 .hero-description {
     font-weight: 400;
@@ -148,4 +153,65 @@ a {
     color: rgba(var(--light-rgb), .8);
     max-width: 320px;
     margin: 0 auto;
+}
+
+/* Banner */
+
+.banner {
+    margin: 100px auto;
+    margin-top: 140px;
+    background-image: url(../images/banner.jpg);
+    max-width: 1182px;
+    max-height: 438px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--light);
+}
+.banner-wrapper {
+    padding: 100px;
+    padding-left: 87px;
+}
+.banner-title {
+    font-family: var(--nunito-sans);
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 127%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.banner-title span{
+    display: block;
+    font-family: var(--open-sans);
+    background-color: var(--accent-dark);
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    padding: 5px 18px;
+    max-width: calc(95px - 18px * 2);
+    max-height: calc(28px - 5px * 2);
+}
+.banner-description {
+    color: rgba(var(--light-rgb), .8);
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 353px;
+    line-height: 160%;
+    margin-top: 0;
+}
+.banner-btn {
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark);
+    border-radius: 5px;
+    border: 1px solid var(--accent-light);
+    background-color: var(--accent-light);
+    padding: 20px 25px;
+    max-height: 58px;
 }
