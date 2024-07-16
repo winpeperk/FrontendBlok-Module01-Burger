@@ -9,6 +9,8 @@
     --light-rgb: 255, 255, 255;
     --dark-rgb: 68, 55, 55;
     --line: #dedede;
+
+    --tr: .2s;
 }
 
 body {
@@ -17,9 +19,11 @@ body {
 }
 a {
     text-decoration: none;
+    transition: var(--tr);
 }
 button {
     cursor: pointer;
+    transition: var(--tr);
 }
 .container {
     width: 100%;
@@ -387,6 +391,9 @@ aside {
     line-height: 160%;
     color: var(--light);
     font-weight: 700;
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
 .footer-list span {
     margin-bottom: 2px;
@@ -394,11 +401,6 @@ aside {
     display: block;
     color: rgba(var(--light-rgb), .9);
 } 
-.footer-list ul{
-    margin-top: 0;
-    list-style-type: none;
-    padding-left: 0;
-}
 .footer-list li:first-child {
     margin-bottom: 12px;
 }
@@ -415,5 +417,5 @@ aside {
     gap: 2px;
 }
 .footer-phone:hover {
-    color: var(--accent-dark);
+    color: var(--light);
 }
