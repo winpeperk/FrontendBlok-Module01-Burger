@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="headerTop">
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo"></div>
@@ -43,74 +43,76 @@
             <div class="banner-wrapper">
                 <h2 class="banner-title"><span>Скидка</span>-30%</h2>
                 <p class="banner-description">Только при&nbsp;покупке 3-х и более позиций, мы&nbsp;дарим скидку. Акции не&nbsp;суммируются.</p>
-                <button class="banner-btn" type="button">Купить сейчас</button>
+                <a class="banner-btn" href="#menuBurger">Купить сейчас</a>
             </div>
         </div>
     </section>
     <main>
-        <div class="container">
-            <div class="menu">
-                <div class="menu-header">
-                    <h2 class="menu-title">Бургеры</h2>
-                    <select class="menu-select">
-                        <option value="Сортировать" disabled selected>Сортировать</option>
-                        <option value="По умолчанию">По умолчанию</option>
-                        <option value="По возрастанию цены">По возрастанию цены</option>
-                        <option value="По убыванию цены">По убыванию цены</option>
-                    </select>
-                </div>
-                <div class="menu-box">
-                    <div class="menu-item">
-                        <div class="menu-thumb">
-                            <img src="images/menu/01.jpg" alt="Острый бургер">
-                        </div>  
-                        <h3 class="menu-name">Острый бургер</h3>
-                        <p class="menu-price">$26</p>
-                        <button type="button" class="pay-btn">Купить</button>
+        <section id="menuBurger">
+            <div class="container">
+                <div class="menu">
+                    <div class="menu-header">
+                        <h2 class="menu-title">Бургеры</h2>
+                        <select class="menu-select">
+                            <option value="Сортировать" disabled selected>Сортировать</option>
+                            <option value="По умолчанию">По умолчанию</option>
+                            <option value="По возрастанию цены">По возрастанию цены</option>
+                            <option value="По убыванию цены">По убыванию цены</option>
+                        </select>
                     </div>
-                    <div class="menu-item">
-                        <div class="menu-thumb">
-                            <img src="images/menu/02.jpg" alt="Гриль Бургер">
-                        </div>  
-                        <h3 class="menu-name">Гриль Бургер</h3>
-                        <p class="menu-price">$16</p>
-                        <button type="button" class="pay-btn">Купить</button>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-thumb">
-                            <img src="images/menu/03.jpg" alt="Бурег Гигант">
-                        </div>  
-                        <h3 class="menu-name">Бурег Гигант</h3>
-                        <p class="menu-price">$37</p>
-                        <button type="button" class="pay-btn">Купить</button>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-thumb">
-                            <img src="images/menu/04.jpg" alt="Бургер с курицей">
-                        </div>  
-                        <h3 class="menu-name">Бургер с курицей</h3>
-                        <p class="menu-price">$18</p>
-                        <button type="button" class="pay-btn">Купить</button>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-thumb">
-                            <img src="images/menu/05.jpg" alt="Бургер с курицей">
-                        </div>  
-                        <h3 class="menu-name">Бургер с курицей</h3>
-                        <p class="menu-price">$9</p>
-                        <button type="button" class="pay-btn">Купить</button>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-thumb">
-                            <img src="images/menu/06.jpg" alt="Тройной бургер">
-                        </div>  
-                        <h3 class="menu-name">Тройной бургер</h3>
-                        <p class="menu-price">$7</p>
-                        <button type="button" class="pay-btn">Купить</button>
+                    <div class="menu-box">
+                        <div class="menu-item">
+                            <div class="menu-thumb">
+                                <img src="images/menu/01.jpg" alt="Острый бургер">
+                            </div>  
+                            <h3 class="menu-name">Острый бургер</h3>
+                            <p class="menu-price">$26</p>
+                            <button type="button" class="pay-btn">Купить</button>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-thumb">
+                                <img src="images/menu/02.jpg" alt="Гриль Бургер">
+                            </div>  
+                            <h3 class="menu-name">Гриль Бургер</h3>
+                            <p class="menu-price">$16</p>
+                            <button type="button" class="pay-btn">Купить</button>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-thumb">
+                                <img src="images/menu/03.jpg" alt="Бурег Гигант">
+                            </div>  
+                            <h3 class="menu-name">Бурег Гигант</h3>
+                            <p class="menu-price">$37</p>
+                            <button type="button" class="pay-btn">Купить</button>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-thumb">
+                                <img src="images/menu/04.jpg" alt="Бургер с курицей">
+                            </div>  
+                            <h3 class="menu-name">Бургер с курицей</h3>
+                            <p class="menu-price">$18</p>
+                            <button type="button" class="pay-btn">Купить</button>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-thumb">
+                                <img src="images/menu/05.jpg" alt="Бургер с курицей">
+                            </div>  
+                            <h3 class="menu-name">Бургер с курицей</h3>
+                            <p class="menu-price">$9</p>
+                            <button type="button" class="pay-btn">Купить</button>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-thumb">
+                                <img src="images/menu/06.jpg" alt="Тройной бургер">
+                            </div>  
+                            <h3 class="menu-name">Тройной бургер</h3>
+                            <p class="menu-price">$7</p>
+                            <button type="button" class="pay-btn">Купить</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <aside>
         <div class="container">
@@ -176,5 +178,7 @@
             </div>
         </div>
     </footer>
+    <a href="#headerTop" class="button-up hidden" id="btnUp" >Наверх</a>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

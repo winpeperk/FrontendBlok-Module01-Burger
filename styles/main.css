@@ -107,6 +107,33 @@ button {
     bottom: 0;
     left: 17px;
 }
+.button-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    max-width: 80px;
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark);
+    border-radius: 5px;
+    border: none;
+    background-color: var(--accent-light);
+    padding: 5px 10px;
+    max-height: 58px;
+}
+.button-up:hover {
+    background-color: var(--accent-dark);
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
+}
 
 /* Hero */
 
@@ -212,6 +239,8 @@ button {
     margin-top: 0;
 }
 .banner-btn {
+    display: block;
+    max-width: 170px;
     font-family: var(--nunito-sans);
     font-weight: 700;
     font-size: 14px;
@@ -222,7 +251,8 @@ button {
     border-radius: 5px;
     border: none;
     background-color: var(--accent-light);
-    padding: 20px 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     max-height: 58px;
 }
 .banner-btn:hover {
