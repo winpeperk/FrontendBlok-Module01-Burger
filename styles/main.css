@@ -384,6 +384,7 @@ aside {
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 .footer-logo {
     margin-top: 6px;
@@ -447,6 +448,7 @@ aside {
     font-size: 20px;
     line-height: 190%;
     text-transform: uppercase;
+    text-align: right;
     color: var(--accent-light);
     display: flex;
     flex-direction: column;
@@ -455,7 +457,12 @@ aside {
 .footer-phone:hover {
     color: var(--light);
 }
-
+.footer-phone._mobile {
+    display: none;
+}
+.footer-item:last-child {
+    flex-basis: 194px;
+}
 /* Contacts */
 
 .contact-main {
@@ -570,5 +577,42 @@ aside {
         padding: 100px 40px;
         background-position: -81px center;
      }
-     
+     .menu-box {
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .addition-box {
+        grid-template-columns: repeat(1, 1fr);
+     }
+     .addition-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+     }
+     .addition-thumb {
+        height: 260px;
+        flex-basis: calc(60% - 20px);
+     }
+     .addition-info {
+        flex-basis: 40%;
+     }
+     .addition-name {
+        margin-top: 0;
+     }
+     .footer {
+        padding-top: 59px;
+        padding-bottom: 71px;
+    }
+    .footer-logo {
+        margin-top: 3px;
+    }
+     .footer-phone._mobile {
+        display: block;
+        text-align: left;
+    }
+    .footer-item:last-child {
+        display: none;
+    }
+    .footer-nav {
+     margin-bottom: 12px;
+    }
 }
