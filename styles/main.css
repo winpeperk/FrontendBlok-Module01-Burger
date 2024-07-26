@@ -466,6 +466,10 @@ aside {
 .footer-item:last-child {
     flex-basis: 194px;
 }
+#modal {
+    display: none;
+}
+
 /* Contacts */
 
 .contact-main {
@@ -551,7 +555,6 @@ aside {
 .contact-tel:hover {
     color: var(--accent-light);
 }
-
 /* Media */
 
 @media (max-width: 1080px) {
@@ -583,6 +586,15 @@ aside {
      .menu-box {
         grid-template-columns: repeat(2, 1fr);
      }
+     .menu-title, .addition-title {
+        color: #1b2a49;
+     }
+     .menu-name {
+        color: #1b2a49;
+     }
+     .pay-btn {
+        color: #1e2f40;
+     }
      .addition-box {
         grid-template-columns: repeat(1, 1fr);
      }
@@ -607,6 +619,9 @@ aside {
     }
     .footer-logo {
         margin-top: 3px;
+    }
+    .footer-title.nav {
+        display: block;
     }
      .footer-phone._mobile {
         display: block;
@@ -646,6 +661,9 @@ aside {
         width: 116px;
         height: 37px;
         flex-grow: 1;
+    }
+    #modal {
+        display: block;
     }
     .nav._modal {
         display: flex;
@@ -715,5 +733,94 @@ aside {
     }
     .banner-btn {
         max-width: 196px;
+    }
+    .menu-box {
+        gap: 24px 20px;
+     }
+    .menu-header {
+        margin-bottom: 24px;
+    }
+    .menu-thumb {
+        height: 50vw;
+    }
+    .menu-title, .addition-title {
+        font-size: 27px;
+        line-height: 207%;
+    }
+    .menu-name, .addition-name {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 154%;
+        margin-top: 7px;
+        margin-bottom: 1px;
+    }
+    .menu-price, .addition-price {
+        font-size: 12px;
+        line-height: 233%;
+        margin-bottom: 6px;
+     }
+    .menu-select {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 200%;
+        flex-basis: 136px;
+        width: 136px;
+        background-size: 14px 8px;
+        background-position: 92% center;
+        padding: 8px 14px;
+    }
+    .pay-btn {
+        padding: 10px 21px;
+    }
+    main {
+        margin-bottom: 50px;
+    }
+    aside {
+        margin-bottom: 80px;
+    }
+    .addition-box {
+        gap: 24px;
+    }
+    .addition-thumb {
+        height: 30vw;
+    }
+    .addition-title {
+        margin-bottom: 24px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 33px;
+        position: relative;
+    }
+    .footer-logo {
+        margin-bottom: 8px;
+    }
+    .footer-title {
+        font-size: 18px;
+        line-height: 211%;
+        font-weight: 800;
+    }
+    .footer-nav {
+        margin-bottom: 0;
+    }
+    .footer-phone._mobile {
+        position: absolute;
+        right: 0;
+        top: -9px;
+    }
+    .footer-phone._mobile + .footer-phone._mobile {
+        top: 29px;
+    }
+}
+
+@media (max-width: 500px) {
+    .addition-thumb {
+        height: 40vw;
+    }
+    .addition-info {
+        flex-basis: 130px;
+    }
+    .addition-thumb {
+        flex-basis: calc(100% - 20px - 130px);
     }
 }
